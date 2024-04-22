@@ -1,0 +1,153 @@
+
+.accueil-photos {
+  background-color: white;
+  padding: 80px;
+}
+
+.accueil-photos h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.accueil-photos div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.accueil-introduction {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+}
+
+.accueil-introduction div {
+  padding-right: 80px;
+}
+
+.section-contact h2 {
+  color: #a5b4fc;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;  
+  margin: auto;
+  color: white;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 996px) {
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+  }
+  .accueil-introduction div {
+    padding: 0;
+  }
+
+  section {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .txt-introduction {
+    order: 2;
+    text-align: center;
+  }
+   .accueil-introduction a {  /*CTA*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.8em;
+    width: 50%;
+  }
+
+  .accueil-photos h2,
+  .section-contact h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .accueil-photos {
+    padding: 10px;
+  }
+  .accueil-photos div {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* .form-nom-email {
+    gap: 5px;
+  }
+
+  input, 
+  textarea {
+    padding: 0;
+  } */
+  .form-nom-email {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
